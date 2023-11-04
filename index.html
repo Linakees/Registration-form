@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="text">Welcome!</div>
+            <div class="image"></div>
+        </div>
+
+        <form id="form">
+            <div class="title">Get started</div>
+<!-- User Name input -->
+            <div class="form-field">
+                <label for="username">User Name</label>
+                <i class="fas fa-user"></i>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="John Smith"
+                />
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+
+                <div class="errorMsg"></div>
+
+            </div>
+            <!-- Email input -->
+            <div class="form-field">
+                <label for="email">Email</label>
+                <i class="far fa-envelope"></i>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="abcde@gmail.com"
+                />
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+    
+                <div class="errorMsg"></div>
+            </div>
+            <!--   Password input -->
+            <div class="form-field">
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+    
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password here"
+                />
+                
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                
+                <div class="errorMsg"></div>
+            </div>
+            <div class="form-field">
+                <label for="confirm-password">Confirm password</label>
+                <i class="fas fa-lock"></i>
+    
+                <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder="Password here"
+                />
+                
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                
+                <div class="errorMsg"></div>
+            </div>
+            <button id="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
