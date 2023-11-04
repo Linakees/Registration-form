@@ -54,7 +54,7 @@ body {
   input:focus {
     border: 2px solid #f2796e;
   }
-/* !!! just by doing it we put icon inside text window */
+
   form div i {
     position: absolute;
     padding: 10px;
@@ -91,8 +91,6 @@ button {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.1s ease;
   }
-
-  /* ADD THIC TO  calculator */
 
   button:hover {
     opacity: 0.8;
