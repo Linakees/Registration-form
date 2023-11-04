@@ -73,7 +73,7 @@ const checkUsername = () => {
     if(!isRequired(username)){
         showError(userName, "Username can not be blank");
     }else if(!isBetween(username.length, min, max)){
-        showError(userName, "Username should be between 3 and 25 symbols");
+         showError(userName, `Username should be between ${min} and ${max} symbols`); 
     }else{
         showSuccess(userName);
         valid = true;
