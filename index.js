@@ -130,14 +130,12 @@ const checkConfirmedPassword = () => {
 
 const debounce = (fn, delay = 500) => {
     let timeoutId;
-    return (...args) => {
-        // cancel the previous timer
+    return (e) => {
         if (timeoutId) {
             clearTimeout(timeoutId);
         }
-        // setup a new timer
         timeoutId = setTimeout(() => {
-            fn.apply(null, args)
+            fn(e);
         }, delay);
     };
 };
